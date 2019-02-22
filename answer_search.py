@@ -5,14 +5,15 @@
 # Date: 18-10-5
 
 from py2neo import Graph
+from conf import NEO4J_HOST, NEO4J_HTTP_PORT, NEO4J_USER, NEO4J_PASSWORD
 
 class AnswerSearcher:
     def __init__(self):
         self.g = Graph(
-            host="127.0.0.1",
-            http_port=7474,
-            user="lhy",
-            password="lhy123")
+            host=NEO4J_HOST,
+            http_port=NEO4J_HTTP_PORT,
+            user=NEO4J_USER,
+            password=NEO4J_PASSWORD)
         self.num_limit = 20
 
     '''执行cypher查询，并返回相应结果'''

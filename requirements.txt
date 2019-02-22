@@ -1,0 +1,7 @@
+# pipreqs /home/gswyhq/information_extraction_qa
+# sudo pip3 install -r requirements.txt -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com
+pymongo==3.7.2
+pyahocorasick==1.4.0
+lxml==3.7.3
+py2neo==3.1.2
+ahocorasick==0.9
